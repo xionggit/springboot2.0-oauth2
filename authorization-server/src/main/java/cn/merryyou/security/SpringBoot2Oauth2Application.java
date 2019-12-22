@@ -46,7 +46,7 @@ public class SpringBoot2Oauth2Application {
         Claims claims = Jwts.parser().setSigningKey(oAuth2Properties.getJwtSigningKey().getBytes("UTF-8")).parseClaimsJws(token).getBody();
         String blog = (String) claims.get("blog");
         log.info("【SecurityOauth2Application】 getCurrentUser1 blog={}", blog);
-// test 
+// test  mirror diff
         return authentication;
     }
 
