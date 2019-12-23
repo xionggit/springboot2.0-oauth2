@@ -28,5 +28,6 @@ public class SpringBoot2Oauth2ResourceApplication extends ResourceServerConfigur
     @PreAuthorize("hasRole('ROLE_USER')")
     public String success() {
         return "SUCCESS";
+        //
     }
 }
